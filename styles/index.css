@@ -197,3 +197,24 @@ header {
 .footer-icon a {
     color: #111111;
 }
+/* ==== PROJECT SECTION ==== */
+.project-ctrimage {
+    margin-top: 61px;
+    margin-bottom: 45px;
+}
+.project-info {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111111;
+}
+.project-images {
+    display: flex;
+    justify-content: space-between;
+}
+.project-images img {
+     margin-top: 45px;
+     gap: 30px;
+     margin-bottom: 132px;
+}
+
