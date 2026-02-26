@@ -25,6 +25,7 @@ header {
     list-style: none;
     display: flex;
     gap: 29px;
+    margin-left: auto;
 }
 .navlinks a {
     text-decoration: none;
@@ -179,4 +180,20 @@ header {
     height: 2px;
     background-color: #D8D8D8;
     margin: 0 auto 48px auto;
+}
+.footer {
+    margin-top: 114px;
+    margin-bottom: 47px;
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+}
+.footer-icon {
+    display: flex;
+    gap: 24px;
+    margin-left: 95px;
+}
+.footer-icon a {
+    color: #111111;
 }
