@@ -73,3 +73,110 @@ header {
     height: 2px;
     background-color: #111111;
 }
+/* ===== GALLERY ==== */
+.gallery {
+    margin-top: 144px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    grid-auto-rows: 10px;
+}
+.grid img {
+    grid-column: span 4;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* ===== GALLERY ==== */
+.gallery {
+    margin-top: 144px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+.grid img {
+    grid-column: span 4;
+    width: 100%;
+    height: auto;
+}
+.img1 {grid-row: span 41;}
+.img2 {grid-row: span 35;}
+.img3 {grid-row: span 60;}
+/* ==== SERVICES SECTION ==== */
+.services {
+    margin-top: 91px;
+    margin-bottom: 151px;
+}
+.services-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.services-layout h2 {
+    max-width: 635px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    color: #111111;
+}
+.services-lists {
+    display: flex;
+    align-self: flex-start;
+    gap: 70px;
+}
+.services-lists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.services-lists li {
+    font-weight: normal;
+    font-size: 18px;
+    color: #111111;
+}
+/* ==== AWARDS SECTION ==== */
+.awards {
+    margin-top: 0;
+}
+.awards-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.2fr 1fr;
+    padding: 40px 0;
+}
+.awards-col {
+    color: #111111;
+    font-size: 16px;
+}
+.awards-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.awards-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+.awards-project {
+    font-size: 16px;
+}
+.awards-project span {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+}
+.awards-year {
+    text-align: right;
+}
+.award-line {
+    height: 2px;
+    background-color: #D8D8D8;
+    margin: 0 auto 48px auto;
+}
