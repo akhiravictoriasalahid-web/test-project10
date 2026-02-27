@@ -202,6 +202,7 @@ header {
     margin-top: 61px;
 }
 .project-info {
+    margin-top: 39px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -239,4 +240,54 @@ header {
     font-size: 18px;
     color: #111111;
     text-align: left;
+}
+/*  ==== CONTACT SECTION ==== */
+.contact-page {
+    max-width: 475px;
+}
+.contact-page h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    color: #111111;
+}
+.contact-map {
+    margin-top: 136px;
+    margin-bottom: 110px;
+}
+.contact-map img {
+    width: 100%;
+    display: block;
+}
+/* ==== CONTACT FORM ==== */
+.contact-form {
+    width: 475px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+    outline: none;
+    resize: none;
+}
+.btn-submit {
+    background-color: #4A4FF2;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 38px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #3a3ed8;
 }
