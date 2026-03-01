@@ -20,6 +20,8 @@ header {
 .logo {
     font-weight: 800;
     font-size: 30px;
+    transition: opacity 0.3s;
+    cursor: pointer;
 }
 .navlinks {
     list-style: none;
@@ -33,6 +35,8 @@ header {
     font-weight: bold;
     letter-spacing: -0.35px;
     color: #111111;
+    transition: color 0.3s;
+    cursor: pointer;
 }
 /* MAIN SECTION */
 .main {
@@ -59,54 +63,39 @@ header {
     line-height: 60px;
     color: #111111;
 }
+.blue {
+    color: #4A4FF2;
+}
 .main-aside {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     font-style: italic;
     font-size: 18px;
+    gap: 9px;
     color: #111111;
-}
-.main-aside p {
-    margin-top: 2px;
 }
 .line {
     width: 30px;
     height: 2px;
     background-color: #111111;
 }
+
 /* ===== GALLERY ==== */
 .gallery {
     margin-top: 144px;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    grid-auto-rows: 10px;
+    column-count: 3;
+    column-gap: 20px;
 }
 .grid img {
-    grid-column: span 4;
     width: 100%;
-    height: auto;
-    display: block;
+    margin-bottom: 20px;
+    display: block;  
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
 }
-/* ===== GALLERY ==== */
-.gallery {
-    margin-top: 144px;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-}
-.grid img {
-    grid-column: span 4;
-    width: 100%;
-    height: auto;
-}
-.img1 {grid-row: span 41;}
-.img2 {grid-row: span 35;}
-.img3 {grid-row: span 60;}
 /* ==== SERVICES SECTION ==== */
 .services {
     margin-top: 91px;
@@ -181,6 +170,7 @@ header {
     background-color: #D8D8D8;
     margin: 0 auto 48px auto;
 }
+/* ==== FOOTER ==== */
 .footer {
     margin-top: 114px;
     margin-bottom: 47px;
@@ -196,6 +186,12 @@ header {
 }
 .footer-icon a {
     color: #111111;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.footer .navlinks a {
+    transition: color 0.3s;
+    cursor: pointer;
 }
 /* ==== PROJECT SECTION ==== */
 .project-ctrimage {
@@ -220,6 +216,11 @@ header {
      gap: 30px;
      margin-bottom: 132px;
 }
+.project-ctrimage img,
+.project-images img {
+  transition: transform 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
 /*  PROJECT DETAILS BOX */
 .project-details {
     width: 335px;
@@ -229,6 +230,8 @@ header {
     align-items: center;
     padding: 18px 0;
     border-bottom: 1px solid #D8D8D8;
+    transition: background-color 0.3s;
+    cursor: default;
 }
 .detail-label {
     color: #111111;
@@ -288,6 +291,29 @@ header {
     margin-top: 38px;
     cursor: pointer;
 }
+/* ==== HOVER ==== */
 .btn-submit:hover {
     background-color: #3a3ed8;
+}
+.navlinks a:hover {
+    color: #4A4FF2;
+}
+.logo:hover {
+    opacity: 0.7;
+}
+.project-ctrimage img:hover,
+.project-images img:hover,
+.grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.footer .navlinks a:hover {
+    color: #4A4FF2;
+}
+.footer-icon a:hover {
+    color: #4A4FF2;
+    transform: translateY(-3px);
+}
+.detail-row:hover {
+  background-color: #f5f5f5;
 }
